@@ -1,0 +1,10 @@
+FROM python:3.9
+
+RUN pip install pandas sqlalchemy psycopg2 argparse
+
+WORKDIR /app
+COPY yellow_tripdata_2021-01.csv yellow_tripdata_2021.csv
+COPY load_data.py load_data.py
+
+
+ENTRYPOINT [ "python","load_data.py"]

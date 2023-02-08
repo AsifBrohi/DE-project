@@ -1,0 +1,16 @@
+__pycash__
+venv/
+.venv/
+state
+*.tfstate.*
+**.terraform
+**.terraform.lock.*
+**google_credentials.json
+**logs/
+**__pycache__/
+.history
+**/ny_taxi_postgres_data/*
+serving_dir
+*.csv
+.ipynb_checkpoints/
+
